@@ -1,15 +1,18 @@
+import { Link } from 'expo-router';
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function ChoresScreen() {
   return (
-    <View style={ styles.container }>
-        <Text style={ styles.title }>
-          Chores
-        </Text>
-        <Text style={ styles.heading }>
-          No chores assigned
-        </Text>
-    </View>
+    <View style={styles.container}>
+      <Text style={styles.title}>
+        Chores
+      </Text>
+      <Text style={styles.heading}>
+        No chores assigned
+      </Text>
+      <Link href="/login">Go to login</Link>
+    </View >
   );
 }
 
